@@ -1,0 +1,6 @@
+oldschool:
+ build: ./
+ ports:
+  - "31340:9999"
+ expose:
+  - "31340"

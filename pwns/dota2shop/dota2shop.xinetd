@@ -1,0 +1,15 @@
+# A sample xinetd config for an xinetd CTF binary. For rlimits / chdir / other
+# setup, it may be convenient to point xinetd at a wrapper shell script which
+# performs the setup and then exec the binary.
+service problem
+{
+    disable = no
+    socket_type = stream
+    protocol    = tcp
+    wait        = no
+    user        = dota2shop
+    bind        = 0.0.0.0
+    server      = /home/dota2shop/dota2shop
+    type        = UNLISTED
+    port        = 9999
+}

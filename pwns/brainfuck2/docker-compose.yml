@@ -1,0 +1,6 @@
+brainfuck2:
+ build: ./
+ ports:
+  - "31338:9999"
+ expose:
+  - "31338"

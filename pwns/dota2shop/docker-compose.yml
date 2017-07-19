@@ -1,0 +1,6 @@
+dota2shop:
+ build: ./
+ ports:
+  - "31339:9999"
+ expose:
+  - "31339"
